@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas Belajarku</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<header>📘 Tugas Belajarku</header>
+
+<div class="container">
+
+<!-- JADWAL -->
+<div id="jadwalTab" class="tab">
+<h3>📅 Jadwal</h3>
+
+<input id="matkul" placeholder="Nama Mata Kuliah">
+<input id="hari" placeholder="Hari">
+<input id="jam" placeholder="Jam (07:30)">
+<input id="sks" placeholder="SKS">
+<input id="dosen" placeholder="Dosen">
+<button onclick="tambahJadwal()">Tambah</button>
+
+<div id="jadwalList"></div>
+</div>
+
+<!-- TUGAS -->
+<div id="tugasTab" class="tab hidden">
+<h3>📝 Tugas</h3>
+
+<input id="searchTugas" placeholder="Cari tugas...">
+<input id="tMatkul" placeholder="Mata Kuliah">
+<input id="tJenis" placeholder="Jenis Tugas">
+<input id="tDeadline" type="date">
+<button onclick="tambahTugas()">Tambah</button>
+
+<div id="tugasList"></div>
+</div>
+
+<!-- MATERI -->
+<div id="materiTab" class="tab hidden">
+<h3>📚 Materi</h3>
+
+<input id="searchMateri" placeholder="Cari materi...">
+<input id="mMatkul" placeholder="Mata Kuliah">
+<input type="file" id="mFile">
+<button onclick="tambahMateri()">Upload</button>
+
+<div id="materiList"></div>
+</div>
+
+</div>
+
+<!-- NAV -->
+<nav>
+<button onclick="showTab('jadwalTab')">📅</button>
+<button onclick="showTab('tugasTab')">📝</button>
+<button onclick="showTab('materiTab')">📚</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
